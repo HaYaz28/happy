@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Happy Anniversary</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="boxcontainer">
+				<div class="image">
+					<img src="flag.png" alt="" />
+				</div>
+				<div class="text-happybirthday">
+					<img src="z5360966880859_8553b2e8b1042cdce800aab93781c3dd.jpg" alt="" />
+				</div>
+				<div class="cake">
+					<img src="cakeee3.jpg" alt="" />
+				</div>
+				<div class="box-balloon">
+					<div class="balloon-item1">
+						<img src="balloon.png" alt="" />
+					</div>
+					<div class="balloon-item1">
+						<img src="balloon.png" alt="" />
+					</div>
+				</div>
+				<div class="box-cloud">
+					<div class="cloud">
+						<img src="cloud.png" alt="" />
+					</div>
+					<div class="cloud">
+						<img src="cloud.png" alt="" />
+					</div>
+				</div>
+				<div class="box-firework">
+					<div class="firework">
+						<img src="firework.png" alt="" />
+						<img src="firework1.png" alt="" id="firework1" />
+					</div>
+					<div class="firework">
+						<img src="firework.png" alt="" />
+						<img src="firework1.png" alt="" id="firework1" />
+					</div>
+				</div>
+				<div class="paperCannons">
+					<img src="paperCannons1.png" alt="" />
+				</div>
+				<div class="box-giftbox">
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+					<img src="giftbox.png" alt="" />
+				</div>
+				<div class="mail">
+					<i class="fa-regular fa-envelope"></i>
+				</div>
+				<div class="boxcute">
+					<div class="cute1">
+						<img src="z5361039106084_a318e054a5cc83b18362734ceb10c231.jpg" alt="" />
+					</div>
+					<div class="cute2">
+						<img src="z5361039130069_23c2c86bdeb2755f3c75783fc5ce831d.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="boxMail">
+				<i class="fa-solid fa-xmark"></i>
+				<div class="boxMail-container">
+					<div class="card1">
+						<div class="userImg">
+							<img src="Picture3.jpg" alt="" />
+						</div>
+						<h3>Happy Anniversary</h3>
+						<div class="imageCute">
+							<img src="loppy.jpg" alt="" />
+						</div>
+					</div>
+					<div class="card2">
+						<div class="card2-content">
+							<h3>Gửi Ynhu!</h3>
+							<h2>
+								Tới tận bây giờ luôn thì anh vẫn chưa tin được là anh và em sẽ đi cùng đươc đến tận bây giờ 
+								nhưng mà cái chuyện hong thể đó lại thành được sự thật, trong lòng anh cảm thấy mình mai mắn rất nhiều 
+							khi có được em bên cạnh như thế này, chắc có lẽ anh phải dùng hết tất cả mai mắn ở trong tình yêu để gặp được em 
+							từ trước khi anh gặp em thì anh là một con người khác còn khi gặp em thì anh lại là một con người khác nữa
+							khi có em bên cạnh thì em đã giúp anh trở nên tốt hơn trước rất nhiều và giúp anh tránh xa được những thứ cám dỗ khiến anh
+							trở nên hư hỏng. thật sự em đã giúp cuộc đời anh trở nê tốt đẹp hơn rất rất nhiều
+							Cảm ơn em, Cảm ơn vì những thứ tốt đẹp dành cho anh
+							Anh mong chúng ta sẽ cùng nha đón thật nhiều cái Happyanniversary và chúng ta sẽ đón Happy Wedding mà ở đó chúng ta sẽ là nhân vật chính 
+							Cố Gắng cùng nhau nha bxa ynhu của anh 💕					
+							</h2>
+							<div class="imageCute2">
+								<img src="quatang.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		document.addEventListener('mousemove', function (e) {
+			let body = document.querySelector('body');
+			let heart = document.createElement('span');
+			let x = e.offsetX;
+			let y = e.offsetY;
+			heart.style.left = x + 'px';
+			heart.style.top = y + 'px';
+
+			let size = Math.random() * 10;
+			heart.style.width = 4 * size + 'px';
+			heart.style.height = 4 * size + 'px';
+
+			let transformValue = Math.random() * 360;
+			heart.style.transform = 'rotate(' + transformValue + 'deg)';
+
+			body.appendChild(heart);
+
+			setTimeout(function () {
+				heart.remove();
+			}, 1000);
+		});
+
+		let mailBox = document.querySelector('.mail');
+		let boxmail = document.querySelector('.boxMail');
+		var close = document.querySelector('.fa-xmark');
+		mailBox.onclick = function () {
+			mailBox.classList.toggle('active');
+			boxmail.classList.add('active');
+		};
+
+		close.addEventListener('click', function () {
+			boxmail.classList.remove('active');
+		});
+	</script>
+</html>
